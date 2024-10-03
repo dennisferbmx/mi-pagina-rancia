@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Tienda de Bicicletas "Rueda Libre"</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff; /* Fondo azul claro */
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2, h3 {
+            color: #2E8B57; /* Verde oscuro */
+        }
+
+        p {
+            color: #555;
+        }
+
+        a {
+            color: #008080; /* Color del enlace */
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Estilos para el menú */
+        nav {
+            background-color: #2E8B57; /* Verde oscuro */
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+
+        /* Estilos para las secciones */
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Estilos para formularios */
+        form {
+            margin: 20px 0;
+        }
+
+        form input[type="text"], form input[type="email"], form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form input[type="submit"], form input[type="reset"] {
+            background-color: #2E8B57;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        form input[type="submit"]:hover, form input[type="reset"]:hover {
+            background-color: #3CB371;
+        }
+
+        /* Estilos para las tablas */
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid #2E8B57;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #2E8B57;
+            color: white;
+        }
+
+        td {
+            background-color: #f9f9f9;
+        }
+
+        /* Video */
+        video {
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Enlaces a videos */
+        a.video-link {
+            display: inline-block;
+            background-color: #008080;
+            color: white;
+            padding: 10px 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        a.video-link:hover {
+            background-color: #20B2AA;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Menú de navegación -->
+<nav>
+    <a href="#productos">Productos</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#contacto">Contacto</a>
+</nav>
+
+<!-- Sección de productos -->
+<section id="productos">
+    <h2>Nuestros Productos</h2>
+    <p>Ofrecemos una amplia variedad de bicicletas:</p>
+    <ul type="square">
+        <li>Bicicletas de Montaña</li>
+        <li>Bicicletas de Ruta</li>
+        <li>Bicicletas Eléctricas</li>
+        <li>Bicicletas Urbanas</li>
+    </ul>
+    <img src="https://ejemplo.com/bicicletas-montana.jpg" width="40%" height="40%" alt="Bicicletas de Montaña">
+</section>
+
+<!-- Sección de servicios -->
+<section id="servicios">
+    <h2>Nuestros Servicios</h2>
+    <p align="center">Nos especializamos en:</p>
+    <ol type="I">
+        <li>Mantenimiento y Reparación</li>
+        <li>Venta de Accesorios</li>
+        <li>Asesoramiento Personalizado</li>
+    </ol>
+    <img src="https://ejemplo.com/servicios-bicicletas.jpg" width="40%" height="40%" alt="Servicio de Mantenimiento">
+</section>
+
+<!-- Sección de contacto -->
+<section id="contacto">
+    <h2>Contáctanos</h2>
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>E-mail</th>
+        </tr>
+        <tr>
+            <td>Juan Pérez</td>
+            <td>juanperez@bicicletas.com</td>
+        </tr>
+    </table>
+
+    <!-- Formulario de contacto -->
+    <form method="post" action="procesar_contacto.php">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre">
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" name="correo">
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="5" cols="30"></textarea><br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpiar">
+    </form>
+</section>
+
+<!-- Video promocional -->
+<section>
+    <h2>Mira nuestro video promocional</h2>
+    <video width="320" height="240" controls>
+        <source src="bicicletas.mp4" type="video/mp4">
+        Tu navegador no soporta la reproducción de videos.
+    </video>
+</section>
+
+<!-- Enlace a otro documento -->
+<section>
+    <h2>Conoce más sobre nuestras bicicletas</h2>
+    <a href="https://www.youtube.com/watch?v=1K0xRHaVluQ&t=830s" class="video-link">Ver en YouTube</a>
+</section>
+
+</body>
+</html>
